@@ -1,6 +1,6 @@
 var expandEducation = false;
-var isexpandLIM = false;
-var isexpandHN = false;
+var isLIMexpanded = false;
+var isHNCexpanded = false;
 var isOFDexpanded = false;
 var isHMAexpanded = false;
 var expandImage = "./image/expand.png";
@@ -10,24 +10,28 @@ var weatherData
 function expandBSC() {
    expandEducation = !expandEducation;
     document.getElementById("BSC").style.display = (expandEducation) ? "inline" :"none";
+    document.getElementById("bsc").style.backgroundColor = (expandEducation) ? "#D0D8D2" :"";
     document.getElementById("BSC_image").src = (expandEducation) ? collapseImage : expandImage;
 }
 
 function expandLIM() {
-    isexpandLIM = !isexpandLIM;
-     document.getElementById("LIM").style.display = (isexpandLIM) ? "inline" :"none";
-     document.getElementById("LIM_image").src = (isexpandLIM) ? collapseImage : expandImage;
+    isLIMexpanded = !isLIMexpanded;
+     document.getElementById("LIM").style.display = (isLIMexpanded) ? "inline" :"none";
+     document.getElementById("lim").style.backgroundColor = (isLIMexpanded) ? "#D0D8D2" :"";
+     document.getElementById("LIM_image").src = (isLIMexpanded) ? collapseImage : expandImage;
  }
 
- function expandHN() {
-    isexpandHN = !isexpandHN;
-     document.getElementById("HN").style.display = (isexpandHN) ? "inline" :"none";
-     document.getElementById("HN_image").src = (isexpandHN) ? collapseImage : expandImage;
+ function expandHNC() {
+    isHNCexpanded = !isHNCexpanded;
+     document.getElementById("HN").style.display = (isHNCexpanded) ? "inline" :"none";
+     document.getElementById("hnc").style.backgroundColor = (isHNCexpanded) ? "#D0D8D2" :"";
+     document.getElementById("HN_image").src = (isHNCexpanded) ? collapseImage : expandImage;
  }
 
  function expandHMA() {
     isHMAexpanded = !isHMAexpanded;
      document.getElementById("HMA").style.display = (isHMAexpanded) ? "inline" :"none";
+     document.getElementById("hma").style.backgroundColor = (isHMAexpanded) ? "#D0D8D2" :"";
      document.getElementById("HMA_image").src = (isHMAexpanded) ? collapseImage : expandImage;
  }
 
@@ -35,6 +39,7 @@ function expandLIM() {
  function expandOFD() {
     isOFDexpanded = !isOFDexpanded;
      document.getElementById("OFD").style.display = (isOFDexpanded) ? "inline" :"none";
+     document.getElementById("ofd").style.backgroundColor = (isOFDexpanded) ? "#D0D8D2" :""
      document.getElementById("OFD_image").src = (isOFDexpanded) ? collapseImage : expandImage;
  }
 function showWeatherAlert(){
