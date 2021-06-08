@@ -8,13 +8,13 @@
 </head>
 <body>
 <div class="container  flex-col black-border card">
-    <div class="flex-row space-between">
+    <div class="space-between intro">
         <div class="margin-left-20"><h2>Jarin Tasnim</h2> 
             <h4>Junior Software Engineer</h4> 
             <p>at Dynamic Sollution Innovators. </p>
         </div> 
         <!-- <div class="card"> -->
-            <img src="./image/me.jpg" alt="Avatar" width="200px" height="250px">
+            <img class="profile-image" src="./image/me.jpg" alt="Avatar">
           <!-- </div> -->
     </div>
     <div class="black-border-thin"></div>
@@ -48,15 +48,40 @@
     <div class="black-border-thin flex-row padding-left-20 white-gray">
         <img src="./image/education.png" width="16px" height="16px"/> <div class="padding-left-20">Education :</div>
     </div>
-    <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-10 margin-right-10 GI" onclick={expandBSC()}>
-    <div >BSE in Software Engineering</div><img  src="./image/expand.png" width="16px" height="16px"/>
+    <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandBSC()}>
+    <div >BSE in Software Engineering</div><img id="BSC_image" src="./image/expand.png" width="16px" height="16px"/>
     </div>
-    <div id="BSC" class="flex-col flex-end margin-left-10 margin-right-10 display-none"><div>Shahjalal University of Science & Technology</div><div>Session : 2016-17</div></div>
+    <div id="BSC" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>Shahjalal University of Science & Technology</div><div>Session : 2016-17</div></div>
+
 
 
     <div class="black-border-thin flex-row padding-left-20 white-gray">
-        <img src="./image/education.png" width="16px" height="16px"/> <div class="padding-left-20">Project :</div>
+        <img src="./image/projects.png" width="16px" height="16px"/> <div class="padding-left-20">Project :</div>
     </div>
+    <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandLIM()}>
+        <div >Logistic Insight Management (LIM)</div><img id="LIM_image" src="./image/expand.png" width="16px" height="16px"/>
+    </div>
+    <div id="LIM" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>SELISE rockin' software</div><div>Jan 2020 - June 2020</div></div>
+
+
+    <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandHN()}>
+        <div >Hacker News Clone Application</div><img id="HN_image" src="./image/expand.png" width="16px" height="16px"/>
+    </div>
+    <div id="HN" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>React Trainig Period at DSI</div><div>March 2021 - April 2021</div></div>
+
+    <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandHMA()}>
+        <div >Hotel Management Application</div><img id="HMA_image" src="./image/expand.png" width="16px" height="16px"/>
+    </div>
+    <div id="HMA" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>Built in React for Database Management course</div><div>March 2021 - April 2021</div></div>
+    
+    
+    <div class="black-border-thin flex-row padding-left-20 white-gray">
+        <img src="./image/thesis.png" width="16px" height="16px"/> <div class="padding-left-20">Thesis :</div>
+    </div>
+    <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandOFD()}>
+        <div >Online Food Ordering System (OFD)</div><img id="OFD_image" src="./image/expand.png" width="16px" height="16px"/>
+    </div>
+    <div id="OFD" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><a href="https://github.com/Rafa2016831028/Thesis">OFD : An emperical study of Customer polarization</a><div>Published on ICT4SD conference March 2021</div></div>
 </div>
 </body>
 </html>

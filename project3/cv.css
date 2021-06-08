@@ -107,12 +107,29 @@
   div.GI:hover {color: black; background-color: #D0D8D2;}
   a.GI:hover {color: black; background-color: #F5F5F5;}
 
-
+  .profile-image{
+    width: 200px;
+    height: 250px ;
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+}
   @media screen and (max-width: 600px) {
     .container {
       /* float: none;
       width: 100%; */
       margin-left: 5% !important;
       margin-right: 5% !important;
+    }
+    .profile-image{
+        width: 120px;
+        height: 150px;
+    }
+  }
+  @media screen and (max-width: 305px) {
+    .intro{
+        flex-direction: column-reverse !important;
+        align-items: center;
     }
   }
