@@ -44,13 +44,11 @@ function expandLIM() {
  }
 function showWeatherAlert(){
     axios.get('https://api.openweathermap.org/data/2.5/weather?q=sylhet&appid=e0748595c399119a34571cab65adec9a')
-   .then((response) => {
-    console.log(response.data);
-    weatherData = response.data;
-    let weatherCondition = weatherData.weather[0].description;
-    let temperature = weatherData.coord.lat;
+   .then(({data}) => {
+    let weatherCondition = data.weather[0].description;
+    let temperature = data.coord.lat;
     swal({
-        title: weatherData.name,
+        title: data.name,
         text: "Condition: "+weatherCondition+"  Temperature: "+temperature+" degree",
         timer: 2000,
         icon: "./image/cloudy.png",
