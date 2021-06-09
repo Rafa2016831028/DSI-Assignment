@@ -1,11 +1,11 @@
-var expandEducation = false;
-var isLIMexpanded = false;
-var isHNCexpanded = false;
-var isOFDexpanded = false;
-var isHMAexpanded = false;
-var expandImage = "./image/expand.png";
-var collapseImage = "./image/collapse.png";
-var weatherData
+let expandEducation = false;
+let isLIMexpanded = false;
+let isHNCexpanded = false;
+let isOFDexpanded = false;
+let isHMAexpanded = false;
+let expandImage = "./image/expand.png";
+let collapseImage = "./image/collapse.png";
+let weatherData
 
 function expandBSC() {
    expandEducation = !expandEducation;
@@ -47,8 +47,8 @@ function showWeatherAlert(){
    .then((response) => {
     console.log(response.data);
     weatherData = response.data;
-    var weatherCondition = weatherData.weather[0].description;
-    var temperature = weatherData.coord.lat;
+    let weatherCondition = weatherData.weather[0].description;
+    let temperature = weatherData.coord.lat;
     swal({
         title: weatherData.name,
         text: "Condition: "+weatherCondition+"  Temperature: "+temperature+" degree",
