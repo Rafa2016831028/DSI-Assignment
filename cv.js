@@ -12,6 +12,7 @@ function expandBSC() {
     document.getElementById("BSC").style.display = (expandEducation) ? "inline" :"none";
     document.getElementById("bsc").style.backgroundColor = (expandEducation) ? "#D0D8D2" :"";
     document.getElementById("BSC_image").src = (expandEducation) ? collapseImage : expandImage;
+    console.log("open");
 }
 
 function expandLIM() {

@@ -10,37 +10,40 @@
 <div class="container  flex-col black-border card">
     <div class="space-between intro">
         <div class="margin-left-20"><h2>Jarin Tasnim</h2> 
-            <h4>Junior Software Engineer</h4> 
-            <p>at Dynamic Sollution Innovators. </p>
+            <h4>Research Assistant</h4> 
+            <p>at Shahjalal University of Science and Technology</p>
         </div> 
         <!-- <div class="card"> -->
             <img class="profile-image" src="./image/me.jpg" alt="Avatar">
           <!-- </div> -->
     </div>
     <div class="black-border-thin"></div>
-    <p class="flex-row space-between margin-left-20">Self-motivated Software Engineer with 6 month internship experience in developing, designing and
-        maintaining Web applications. Passionate about the software industry and driven to deliver high-quality work.</p>
+    <div class="flex-row space-between margin-left-20 margin-top-10 margin-bottom-10 margin-right-20"><div>I am a tech enthusiastic, currently working as a research assistant under the supervision of <a href="https://scholar.google.com/citations?user=TUFDKngAAAAJ&hl=en" class="color-blue underline">Dr. Forhad Rabbi</a>,side by side, serving as a Software Engineer in the Research and Development (R&D) in  <a class="color-blue underline" href="http://dsinnovators.com/">Dynamic Solution Innovators </a></div></div>
     
     <div class="black-border-thin">
     <div class="padding-left-20 white-gray">General Information :</div>
     </div>
     
 
-    <div class="flex-col margin-left-20 margin-top-5 margin-bottom-5">
-    <div class="margin-top-5 flex-row GI" onclick={showWeatherAlert()}> 
+    <div class="flex-col margin-left-20 margin-top-5 margin-bottom-10">
+    <!-- <div class="margin-top-5 flex-row GI" onclick={showWeatherAlert()}> 
         <img src="./image/location.png" class="icon-img"><div class="margin-left-10 cursor-pointer">112, cha-Block, near Metropoliton University, Sylhet </div>
-    </div>
+    </div> -->
 
     <div class="margin-top-5 flex-row GI"> 
         <img src="./image/email.png" class="icon-img"><div class="margin-left-10 cursor-pointer">rafatasnimjarin20@gmail.com</div> 
     </div>
 
-    <div class="margin-top-5 flex-row GI"> 
+    <!-- <div class="margin-top-5 flex-row GI"> 
         <img src="./image/call.png" class="icon-img"><div class="margin-left-10 cursor-pointer">01536177654</div>
-    </div>
+    </div> -->
 
     <div class="margin-top-5 flex-row GI"> 
         <img src="./image/github.png" class="icon-img"><a class="margin-left-10 cursor-pointer" href="https://github.com/Rafa2016831028">Github</a> 
+    </div>
+
+    <div class="margin-top-5 flex-row GI"> 
+        <img src="./image/linkedin.png" class="icon-img"><a class="margin-left-10 cursor-pointer" href="https://bd.linkedin.com/in/jarin-tasnim-355216180">linkedin</a> 
     </div>
     </div>
 
@@ -48,12 +51,22 @@
     <div class="black-border-thin flex-row padding-left-20 white-gray">
         <img src="./image/education.png" width="16px" height="16px"/> <div class="padding-left-20">Education :</div>
     </div>
-    <div id="bsc" class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandBSC()}>
-    <div >BSC. in Software Engineering</div><img id="BSC_image" src="./image/expand.png" width="16px" height="16px"/>
+    <div id="bsc" class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick="expandBSC()">
+    <div >BSC. in Software Engineering <div>CGPA : 3.74 (out of 4.00 scale)</div></div><img id="BSC_image" class="margin-right-10" src="./image/expand.png" width="16px" height="16px"/>
     </div>
-    <div id="BSC" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>Shahjalal University of Science & Technology</div><div>Session : 2016-17</div></div>
+    <div id="BSC" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>Shahjalal University of Science & Technology</div>
+    <div>Session : 2016-17</div></div>
 
 
+
+
+
+    <!-- <div id="lim"  class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandBSC()}>
+        <div >Logistic Insight Management (LIM)</div><img id="LIM_image" src="./image/expand.png" width="16px" height="16px"/>
+    </div>
+    <div id="LIM" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>SELISE rockin' software</div><div>Jan 2020 - June 2020</div></div> -->
+
+<!-- 
 
     <div class="black-border-thin flex-row padding-left-20 white-gray">
         <img src="./image/projects.png" width="16px" height="16px"/> <div class="padding-left-20">Project :</div>
@@ -74,24 +87,85 @@
     </div>
     <div id="HMA" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><div>Built in React for Database Management course</div><div>March 2021 - April 2021</div></div>
     
-    
+     -->
+
+     <div class="black-border-thin flex-row padding-left-20 white-gray">
+        <img src="./image/thesis.png" width="16px" height="16px"/> <div class="padding-left-20">Research Interest :</div>
+    </div>
+    <div>
+        <ul>
+            <li>Human Computer Interaction</li>
+            <li>Software Engineering</li>
+            <li>Social Computing</li>
+            <li>Machine Learning</li>
+        </ul>
+    </div>
+
+
     <div class="black-border-thin flex-row padding-left-20 white-gray">
         <img src="./image/thesis.png" width="16px" height="16px"/> <div class="padding-left-20">Thesis :</div>
     </div>
     <div id="ofd" class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" onclick={expandOFD()}>
-        <div >Online Food Ordering System (OFD)</div><img id="OFD_image" src="./image/expand.png" width="16px" height="16px"/>
+        <div class="margin-left-10 margin-right-10">Online Food Delivery (OFD) System: An empirical study of the polarization of potential consumers and investigating the association between the determinants molding the polarization during COVID-19 pandemic.
+            <div><a class="bold">Status : </a> Accepted on <a href="https://ict4sd.org/home.php" class="color-blue underline">ICT4SD Springer international conference</a> on HCI (Human-Computer Interaction) track and for publication in Springer LNNS series.</div></div><img id="OFD_image" class="margin-right-10" src="./image/expand.png" width="16px" height="16px"/>
     </div>
-    <div id="OFD" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none"><a href="https://github.com/Rafa2016831028/Thesis">OFD : An emperical study of Customer polarization</a><div>Published on ICT4SD conference March 2021</div></div>
+    <div id="OFD" class="flex-col flex-end margin-left-20 margin-right-10 margin-bottom-5 display-none">
+        <div class="margin-top-10"><a class="bold">Abstract : </a>While ICT is burgeoning in southeast Asia, Online Food Delivery (OFD) picking upstream due to its concrete influence on the mob's experience. The COVID-19 pandemic caused an unprecedented impact in most commerce including OFD due to the escalation of safety aspects. On account of the explosion of the pandemic and to prevent the spread of COVID-19, socio and economic factors arise that likely turn OFD potential user's attitudes and behavior. This report highlights a six-month-long online survey (n=158) in Bangladesh that analyzes the fluctuation in OFD consumer tendency, identifying the polarization of potential purchasers during the  COVID-19  and considering the safety, e-satisfaction, and e-trust. Besides, we also discussed the associations between these determinants that are responsible for polarizing the consumers into marginal groups during the pandemic in developing countries like Bangladesh and proposed some suggestions for OFD service providers based on our findings.</div></div>
+
+
+        <div class="black-border-thin flex-row padding-left-20 white-gray">
+            <img src="./image/thesis.png" width="16px" height="16px"/> <div class="padding-left-20">Experience :</div>
+        </div>
+        <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" >
+            <div class="margin-left-10 margin-right-10"><a class="bold">1. Internship (6 months) : </a>I worked in Logistic Insight Management, software for visualizing, planning, and designing aspects of construction process while pursuing my internship in <a class="underline color-blue" href="https://ch.linkedin.com/company/selise">SELISE Digital Platforms</a>, where my major responsibility is to apply Design patterns in the existing code base and design quality improvements.</div>
+        </div>
+
+        <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" >
+            <div class="margin-left-10 margin-right-10"><a class="bold">2. Research Assistant : </a> Working under supervision of <a class="color-blue underline">Dr. Forhad Rabbi</a>,where my core responsibility is to work on the ongoing research projects and maintain HCI focused undergrad thesis groups also prepare research proposal for grants.</div>
+        </div>
+
+        <div class="flex-row space-between margin-top-5 margin-bottom-5 margin-left-20 margin-right-10 GI" >
+            <div class="margin-left-10 margin-right-10"><a class="bold">3. Teacher Assistant : </a>During the 8th semester of my undergrad studies, I also worked as a TA where I assessed assignments and formulate lecture notes.</div>
+        </div>
+
+        <!-- experience end-->
+
+
+
+        <div class="black-border-thin flex-row padding-left-20 white-gray">
+            <img src="./image/thesis.png" width="16px" height="16px"/> <div class="padding-left-20">Current Projects :</div>
+        </div>
+        <div  class="flex-row space-between margin-right-20" onclick={expandHMA()}>
+            <ul>
+                <li>Applying qualitative approach and model mapping between features for determining multidimensional factor association while using OFD during the covid-19 pandemic.</li>
+                <li>Scrutinizing the prospects and impediments on the education sector of individuals with Autism Spectrum Disorder in Asian continent during Covid-19 pandemic.</li>
+                </ul>
+        </div>
+      
+
+
+
 
     <div class="black-border-thin flex-row padding-left-20 white-gray">
         <img src="./image/thesis.png" width="16px" height="16px"/> <div class="padding-left-20">Technical Expertise :</div>
     </div>
     <div>
         <ul>
-            <li>Language : C , C++, Java, javascript, Python</li>
+            <li>Language : Python, C , C++, Java, javascript</li>
             <li>Frontend Framework : React, Angular</li>
-            <li>Backend Framework : Node Js</li>
+            <li>Backend Framework : Node Js, SpringBoot</li>
             <li>Design Pattern : MVC, MVP, Factory etc.</li>
+        </ul>
+    </div>
+
+    <div class="black-border-thin flex-row padding-left-20 white-gray">
+        <img src="./image/thesis.png" width="16px" height="16px"/> <div class="padding-left-20">Achievements :</div>
+    </div>
+    <div>
+        <ul>
+            <li>Achieved meritorious scholarship from Dept. of Software Engineering, SUST for obtaining first position in 3rd,4rth and 8th semester</li>
+            <li>Champion at SCDN Intra SUST Hackathon.</li>
+            <li>Got Government scholarship at Higher Secondary Certicate Examination (H.S.C)</li>
         </ul>
     </div>
     
