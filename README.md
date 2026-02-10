@@ -14,3 +14,5 @@ List of topics to learn first:
 6. JDBC
 7. HTTP servlet, servlet session, JSP
 8. Maven (a build tool)
+
+# Note : The index.html has the resume.
